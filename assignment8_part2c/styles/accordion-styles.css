@@ -1,0 +1,40 @@
+body {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    border: 3px solid black;
+    width: 1200px;
+    height: 1200px;
+    margin: 5% auto;
+}
+
+section {
+    margin: 60px;    
+}
+
+h3 {
+    background-color: darkgreen;
+    color: white;
+    border: green;
+    border-radius: 1em;
+    margin: 5px auto;
+    width: 90%;
+    padding: 15px;
+}
+i {
+    padding: 15px;
+    pointer-events: none;
+    
+}
+#fourSeasonsText {
+    display: none;
+}
+
+#warmSeasonsText {
+    display: none;
+}
+#coldSeasonsText {
+    display: none;
+}
