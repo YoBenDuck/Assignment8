@@ -1,0 +1,51 @@
+/* base page styles
+-----------------------------------------------*/
+body {
+	background-color: #F5F4F4;
+	color: #404040;
+	max-width: 100%;
+	font-family: 'Cutive Mono', Ariel, sans-serif;
+	font-size: .75em;
+	font-weight: 400;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+
+/* accordion styles 
+-----------------------------------------------*/
+.accordion {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+.accordion div {
+	display: none;
+}
+.accordion, .accordion a{
+	width: 300px;
+}
+.accordion div {
+	margin-left: 10px
+}
+.accordion p {
+	padding: 0 10px;
+}
+.accordion a {
+	display: block;
+	text-decoration: none;
+	background: url('../img/plus.png') no-repeat 3% 50%;
+	color: #F5F4F4;
+	background-color: #024959;
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 10px 0 10px 45px;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+.accordion .minus {
+	background: url('../img/minus.png') no-repeat 3% 50%;
+	background-color: #037e8c;
+	border-radius: 15px 15px 0 0;
+}

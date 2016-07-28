@@ -1,0 +1,50 @@
+body {
+	width: 100%;
+}
+
+a {
+	display: block;
+	font-size: 3em;
+	padding: 25px;	
+}
+
+button,
+input[type="button"]{
+	display: block;
+	width: 200px;
+	height: 40px;
+	background-color: darkorange;
+	color: aliceblue;
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+div:last-of-type {
+	position: absolute;
+	top: 2%;
+	right: 20%;
+}
+
+input[type="text"],
+input[type="email"]{
+	display: block;
+	width: 180px;
+	height: 30px;
+	margin: 10px;
+	padding: 7px;
+	color: #333;
+	font-size: 2em;
+}
+label {
+	margin: 10px;
+}
+
+.highlight {
+	background-color: lightgrey;
+}
+.warning {
+	border: 1px solid red;
+}
+.success {
+	border: 1px solid green;
+}

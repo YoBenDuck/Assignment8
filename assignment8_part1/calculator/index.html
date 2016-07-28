@@ -2,10 +2,44 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Part1: The Calculator III</title>
-<link href="../styles/normalize.css" type="text/css" rel="stylesheet">
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="../js/script.js"> </script>
+<title>Assignment 8 - Calculator III</title>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script>
+	$(function(){
+		var calcScreen = $('#result');
+		$('input[type="button"]').css({
+			width: "6em",
+			padding: "3em 0.375em",
+			border: "1px solid #404040",
+			backgroundColor: "#FBFBFB",
+			color: "#404040",
+			fontSize: "1em"				
+		});
+		$('#result').css({
+			width: "24em",
+			padding: "3em 0.375em",
+			border: "1px solid #404040",
+			margin: "3px 0",
+			backgroundColor: "#404040",
+			color: "#FBFBFB",
+			fontSize: "1em"
+		});
+		$('#divide, #multiply, #subtract, #period, #add, #equal').css({
+			backgroundColor: "#FFC300",
+			color: "#FBFBFB",
+		});
+        
+		$('#container').on("click", function(event) {
+			var calcBtn = event.target.value;			
+		 	calcScreen.val(calcScreen.val() + calcBtn);
+		});
+		$('#equal').on("click", function() {
+			var total = calcScreen.val();
+			calcScreen.val(eval(total));
+		});
+	});
+    
+</script>
 </head>
 
 <body>
