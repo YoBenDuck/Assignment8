@@ -1,10 +1,9 @@
-/* base page styles
------------------------------------------------*/
+
 body {
 	background-color: #F5F4F4;
 	color: #404040;
 	max-width: 100%;
-	font-family: 'Cutive Mono', Ariel, sans-serif;
+	font-family: 'Cutive Mono', arial, sans-serif;
 	font-size: .75em;
 	font-weight: 400;
 }
@@ -13,8 +12,6 @@ img {
 	height: auto;
 }
 
-/* accordion styles 
------------------------------------------------*/
 .accordion {
 	position: absolute;
 	top: 10%;

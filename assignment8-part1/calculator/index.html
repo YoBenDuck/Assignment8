@@ -8,13 +8,14 @@
 	$(function(){
 		var calcScreen = $('#result');
 		$('input[type="button"]').css({
-			width: "6em",
-			padding: "3em 0.375em",
+			width: "96px",
+			padding: "6px 1px",
 			border: "1px solid #404040",
 			backgroundColor: "#FBFBFB",
 			color: "#404040",
 			fontSize: "1em"				
 		});
+        
 		$('#result').css({
 			width: "24em",
 			padding: "3em 0.375em",
@@ -24,19 +25,34 @@
 			color: "#FBFBFB",
 			fontSize: "1em"
 		});
+        
 		$('#divide, #multiply, #subtract, #period, #add, #equal').css({
 			backgroundColor: "#FFC300",
 			color: "#FBFBFB",
+            fontSize: "1.2em",
+            padding: "3.5px 1px",
+            fontWeight: "bold"
 		});
         
 		$('#container').on("click", function(event) {
 			var calcBtn = event.target.value;			
-		 	calcScreen.val(calcScreen.val() + calcBtn);
+            if (calcBtn != undefined) {
+		 	    calcScreen.val(calcScreen.val() + calcBtn);
+            }
 		});
+        
 		$('#equal').on("click", function() {
 			var total = calcScreen.val();
 			calcScreen.val(eval(total));
 		});
+        
+        $('#add').css({
+           width: "12.25rem" 
+        });
+        
+        $('#equal').css({
+           width: "24.75rem" 
+        });
 	});
     
 </script>
