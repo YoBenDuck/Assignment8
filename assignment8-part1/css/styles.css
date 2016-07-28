@@ -4,7 +4,7 @@ body {
 
 a {
 	display: block;
-	font-size: 3em;
+	font-size: 3.25em;
 	padding: 25px;	
 }
 
@@ -13,9 +13,9 @@ input[type="button"]{
 	display: block;
 	width: 200px;
 	height: 40px;
-	background-color: darkorange;
+	background-color: #CD4418;
 	color: aliceblue;
-	font-size: 1.5em;
+	font-size: 2em;
 	margin: 10px;
 }
 
@@ -32,7 +32,7 @@ input[type="email"]{
 	height: 30px;
 	margin: 10px;
 	padding: 7px;
-	color: #333;
+	color: #404040;
 	font-size: 2em;
 }
 label {

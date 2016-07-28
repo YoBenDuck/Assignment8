@@ -2,66 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Assignment 8 Part 1| JQuery Events</title>
+	<title>Assignment 8 Part 1: Practice with jQuery Events</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="js/jquery-3.1.0.min.js"></script>
   <script>
 		$(function() {
-			//Part 1
+//Part 1
 			$('body').append('<button>Button 1</button>');
 			$('body button:eq(0)').click(function(event) {
 				alert("Button with .click() method");
 			});
-			//Part 2
+//Part 2
 			$('body').append('<button>Button 2</button>');
 			$('body button:eq(1)').bind("click", function(event) {
 				alert("Button with .bind() method");
 			});
-			//Part 3
+//Part 3
 			$('body').append('<button>Button 3</button>');
 			$('body button:eq(2)').on("click", function(event) {
 				alert("Button with .on() method");
 			});
-			//Part 4
+//Part 4
 			$('body').append('<section></section>');
 			$('section').append('<button>Button 4a</button>')
 					.append('<button>Button 4b</button>');
 			$('section').on("click", "button", function(event) {
 				alert("Buttons with single handler");
 			});
-			//Part 5
+//Part 5
 			$('body').append('<div>Waiting for mouse interaction!</div>');
-			$('div:first-of-type').height("400px").width("400px").css("border", "1px solid #333");
+			$('div:first-of-type').height("400px").width("400px").css("border", "5px solid #333");
 			
 			$('div').one({
 				click: function() {alert("Mouse Click!");},
 				mouseenter: function() {alert("Mouse Entered!");},
 				mouseleave: function() {alert("Mouse Left!");}
 			});
-			//Part 6
+//Part 6
 			$('div').wrapInner('<span></span>');
-			//Part 7 
+//Part 7 
 			$('body').append('<a href="https://www.google.com/">Link</a>')
 			$('body a').on("click", function(e) {
 					e.preventDefault();
 					$('a').css("color", "red");
 					alert(e.target.nodeName + " is the node that triggered the event!");
 			});
-			//Part 8
+//Part 8
 			$('body').append('<div></div>');
 			$(window).resize(function() {
 			$('div:last-of-type').text("height:" + $(window).height() + " width:" + $(window).width());
 			});
-			//Part 9
-			$('body').append('<label>STEP 9:</label><input>');
+//Part 9
+			$('body').append('<label>Part 9:</label><input>');
 			$('body input:eq(0)').attr("type", "text");
 			$('body input:eq(0)').focus(function() {
-				$('body input:eq(0)').addClass("highlight");
+                $('body input:eq(0)').addClass("highlight");
 			});
 			$('body input').focusout(function() {
 				$('body input').removeClass("highlight");
 			});
-			//Part 10
+//Part 10
 			$('body').append('<form></form>');
 			$('body form').append('<label>Name:</label><input type="text">').append('<label>Email:</label><input type="email">');
 			$('body form').append('<input type="button" value="SUBMIT">');
