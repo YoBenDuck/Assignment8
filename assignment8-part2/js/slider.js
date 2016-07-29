@@ -3,10 +3,12 @@ $(function(){
 	$('html').css("height", "100%");
 	$('body').css("min-height", "100%");
 	$('main').css("margin", "0 20px");
+    $('img.center').parent().css('text-align','center');
+    $('nav.center').parent().css('text-align','center');
 	$('#slideNavigation').css("padding-bottom", "20%");
 
 	$('main img').css({
-		width: "95%",
+		width: "60%",
 		margin: "0 auto",
 		height: "auto",
 		border: "10px solid #1C1C1B",
@@ -55,8 +57,8 @@ $(function(){
 				textDecoration: "underline"
 		})};
 
-		$('#slide').fadeOut(1000, function(){
-			$('#slide').attr("src", slideSelect).fadeIn(1000);
+		$('#slide').fadeOut(900, function(){
+			$('#slide').attr("src", slideSelect).fadeIn(900);
 		});
 	});
 }); 
