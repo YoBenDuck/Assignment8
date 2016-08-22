@@ -9,11 +9,11 @@
 		var calcScreen = $('#result');
 		$('input[type="button"]').css({
 			width: "96px",
-			padding: "6px 1px",
+			padding: "5px 1px",
 			border: "1px solid #404040",
 			backgroundColor: "#FBFBFB",
 			color: "#404040",
-			fontSize: "1em"				
+			fontSize: "1.5em"				
 		});
         
 		$('#result').css({
@@ -26,10 +26,10 @@
 			fontSize: "1em"
 		});
         
-		$('#divide, #multiply, #subtract, #period, #add, #equal').css({
+		$('#divide, #multiply, #subtract, #period, #add, #equal, #clear').css({
 			backgroundColor: "#FFC300",
 			color: "#FBFBFB",
-            fontSize: "1.2em",
+            fontSize: "1.6em",
             padding: "3.5px 1px",
             fontWeight: "bold"
 		});
@@ -50,8 +50,12 @@
            width: "12.25rem" 
         });
         
-        $('#equal').css({
+        $('#equal, #clear').css({
            width: "24.75rem" 
+        });
+        
+        $("#clear").click(function(event) {
+					$("#result").val(""); 
         });
 	});
     
@@ -82,5 +86,7 @@
         <input type="button" id="add" value="+">
     </div>
     <input type="button" id="equal" value="=">
+    <br>
+    <input type="button" id="clear" value="Clear">
 </body>
 </html>
